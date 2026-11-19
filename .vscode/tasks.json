@@ -6,18 +6,20 @@
 			"label": "C/C++: g++.exe build active file",
 			"command": "C:\\Users\\theorauline\\msys64\\mingw64\\bin\\g++.exe",
 			"args": [
-				"-fdiagnostics-color=always",
-				"-g",
-				"${file}",
+				"main.cpp",
+				"Classes/*.cpp",
+				"Classes/*.c",
+				"Dependencies/*.c",
+				"Dependencies/*.cpp",
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe",
-				"-lglfw3", 
-				"-lglew32", 
+				"-lglfw3",  
 				"-lopengl32", 
 				"-lgdi32"
 			],
 			"options": {
-				"cwd": "C:\\Users\\theorauline\\msys64\\mingw64\\bin"
+				//"cwd": "C:\\Users\\theorauline\\msys64\\mingw64\\bin"
+				"cwd": "${workspaceFolder}",
 			},
 			"problemMatcher": [
 				"$gcc"

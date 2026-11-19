@@ -1,7 +1,7 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
-#include "shader.h"
+#include "Classes/shader.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
@@ -37,7 +37,7 @@ int main() {
     }
 
     // Shader creation
-    Shader ourShader("shader.vs", "shader.fs");
+    Shader ourShader("Shaders/shader.vs", "Shaders/shader.fs");
 
 
     // Triangle Points Vertices
